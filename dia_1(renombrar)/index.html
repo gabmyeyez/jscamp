@@ -7,19 +7,41 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header>
-      <h2>Devjobs</h2>
+    <header class="navbar">
+      <h1>
+        <svg
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <polyline points="16 18 22 12 16 6"></polyline>
+          <polyline points="8 6 2 12 8 18"></polyline>
+        </svg>
+        DevJobs
+      </h1>
+
       <nav>
-        <a href="">Home</a>
-        <a href="empleos.html">Jobs</a>
+        <!-- <a href="">
+                Inicio
+              </a> -->
+        <a href="empleos.html">Inicio</a>
+        <a href="empleos.html">Empleos</a>
+        <a href="empleos.html">Empresas</a>
+        <a href="empleos.html">Salarios</a>
       </nav>
-      <div>
-        <a href="">Publicar un empleo</a>
-        <a href="">Iniciar Sesión</a>
+
+      <div class="right-nabvar-parent">
+        <a href="">Subir CV</a>
+        <img class="navbar-profile-pic" src="./background.webp" />
+        <!-- <a href="">Iniciar sesión</a> -->
       </div>
     </header>
     <main>
-      <section>
+      <section class="hero-section">
         <img src="./background.webp" />
         <h1>Encuentra Chamba WEY</h1>
         <p>Únete a la comuindad más grandes de devs chambeadores</p>
@@ -46,13 +68,13 @@
           </div>
         </form>
       </section>
-      <section>
+      <section class="features-section">
         <header>
           <h2>¿Porqué Conseguir chamba????!!</h2>
           <p>Pa conseguir lana wey JAJAJA</p>
         </header>
         <footer>
-          <article>
+          <article class="card">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -81,7 +103,7 @@
               si quedas o no jaja.
             </p>
           </article>
-          <article>
+          <article class="card">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -105,7 +127,7 @@
               Felicidad??
             </p>
           </article>
-          <article>
+          <article class="card">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -142,7 +164,7 @@
         </footer>
       </section>
     </main>
-    <footer>
+    <footer class="main-footer">
       <small>&copy; 2025 Devjobs. Todos los derechos reservados.</small>
     </footer>
   </body>
