@@ -123,11 +123,12 @@ h1 + p {
   border-radius: 0.5rem;
   background-color: #334155;
   color: var(--text-primary);
-  display: inline-block;
   font-size: 0.875rem;
   font-weight: 700;
   text-decoration: none;
-  /* TODO */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Hero */
@@ -520,12 +521,16 @@ button {
   margin-bottom: 1rem;
 }
 
-.results-section article {
+.job-card {
   margin: 0;
   outline: var(--text-muted) solid 1px;
   padding: 2rem;
-  border-radius: 0.5rem;
+  border-radius: 0rem;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5);
+
+  &.is-hidden {
+    display: none;
+  }
 
   header {
     div {
@@ -546,6 +551,39 @@ button {
   p {
     margin-top: 0.25rem;
     color: var(--text-muted);
+  }
+
+  &:first-child {
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+  }
+
+  &:last-child {
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
+  }
+}
+
+select {
+  padding: 0.625rem 1.25rem;
+  background-color: #242d3a;
+  border-radius: 0.5rem;
+  border: 0;
+  font-size: 0.875rem;
+  color: #ddd;
+  cursor: pointer;
+  transition: all 0.2s;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='icon icon-tabler icons-tabler-outline icon-tabler-chevron-down'%3E%3Cpath stroke='none' d='M0 0h24v24H0z' fill='none'/%3E%3Cpath d='M6 9l6 6l6 -6' /%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.5rem center;
+  padding-right: 2.5rem;
+
+  &:hover {
+    background-color: var(--primary-hover);
+    color: #ffffff;
+  }
+  &:focus {
+    outline: 2px solid #1173d4;
+    outline-offset: 2px;
   }
 }
 
